@@ -67,7 +67,7 @@ export default function Home() {
             fontSize: "5rem",
           }}
         >
-          Youth LightHouse
+          Youth Light House
         </h1>
 
         <h3
