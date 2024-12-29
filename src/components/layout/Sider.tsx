@@ -1,3 +1,5 @@
+"use client";
+
 import {
   AccountBookOutlined,
   CalculatorOutlined,
@@ -12,7 +14,6 @@ import {
 } from "@ant-design/icons";
 import { Avatar, Flex, Layout, Menu, message, Space } from "antd";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 interface Props {
   collapse: boolean;
@@ -20,8 +21,6 @@ interface Props {
 }
 
 export const SideMenu = (props: Props) => {
-  const router = useRouter();
-
   return (
     <Layout.Sider
       theme="light"
@@ -56,8 +55,6 @@ export const SideMenu = (props: Props) => {
           }}
           theme="light"
           mode="inline"
-          defaultSelectedKeys={[router.pathname]}
-          defaultOpenKeys={[router.pathname]}
           items={[
             {
               label: <Link href={"/dashboard"}>Dashboard</Link>,

@@ -17,7 +17,7 @@ export const AppLayout = (props: Props) => {
   return (
     <>
       <Layout>
-        <HeadMenu blank={props.blank} />
+        <HeadMenu />
         <Layout style={{ minHeight: "100vh" }}>
           <SideMenu
             onCollapse={(collapse) => {

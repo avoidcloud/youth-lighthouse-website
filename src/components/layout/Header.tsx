@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import {
   AccountBookOutlined,
@@ -14,13 +14,8 @@ import {
 } from "@ant-design/icons";
 import { Avatar, Button, Menu, message, Space } from "antd";
 import Link from "next/link";
-import router from "next/router";
 
-interface Props {
-  blank?: boolean;
-}
-
-export const HeadMenu = (props: Props) => {
+export const HeadMenu = () => {
   return (
     <header
       style={{
@@ -58,8 +53,6 @@ export const HeadMenu = (props: Props) => {
           onChange={() => {
             message.info("not implemented");
           }}
-          defaultSelectedKeys={[router.pathname]}
-          defaultOpenKeys={[router.pathname]}
           items={[
             {
               label: <Link href={"/dashboard"}>Dashboard</Link>,
